@@ -23,7 +23,7 @@ const greeting = {
   username: "Suryaveer Singh",
   title: "Hi all, I'm Suryaveer",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of designing and implementing robust and scalable backend systems with Java/ Python and cross-platform applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://suryaveer01.github.io/Resume/Suryaveer_Singh_Resume.pdf", // Set to empty to hide the button
@@ -49,14 +49,17 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Full Stack Developer seeking to build innovative and impactful systems",
   skills: [
     emoji(
-      "⚡ Develop highly efficient Back end  for your Systems"
+      "⚡ Develop robust and scalable backends for systems"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Developing and fine-tuning Machine Learning models"
+    ),
+    emoji(
+      "⚡ Create groundbreaking AI and Robotics projects"
     )
   ],
 
@@ -162,20 +165,12 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Frontend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Python Programming",
-      progressPercentage: "90%"
-    },
-    {
       Stack: "Microservices Architecture",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     },
     {
       Stack: "Event-driven Architecture",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -191,10 +186,12 @@ const workExperiences = {
       company: "Unisys",
       companylogo: require("./assets/images/Unisys_logo.png"),
       date: "July 2016 – June 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed IAM front-end with microservices architecture",
+        "Collaborated with cross-functional teams implementing API's",
+        "Awarded Tarek Award-Technology Excellence Award for a Project",
+        "Proficient in configuring and optimizing messaging queues and Event-Driven architecture"
       ]
     },
     {
@@ -202,7 +199,11 @@ const workExperiences = {
       company: "Unisys",
       companylogo: require("./assets/images/Unisys_logo.png"),
       date: "Jan 2016 – June 2016",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Developed web and android applications",
+      descBullets: [
+        "Developed a face feature detection application in android",
+        "Developed web-pages for on-premises monolithic application",
+      ]
     }
   ]
 };
