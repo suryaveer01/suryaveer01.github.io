@@ -22,15 +22,12 @@ export default function GithubProfileCard({prof}) {
             </div>
             <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
             <>
-                  <a
-                    className="contact-detail"
-                    href={"tel:" + contactInfo.number}
-                  >
-                    {contactInfo.number}
-                  </a>
-                  <br />
-                  <br />
-                </>
+              <a className="contact-detail" href={"tel:" + contactInfo.number}>
+                {contactInfo.number}
+              </a>
+              <br />
+              <br />
+            </>
             {prof.location !== null && (
               <div className="location-div">
                 <span className="desc-prof">

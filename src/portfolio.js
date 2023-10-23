@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of designing and implementing robust and scalable backend systems with Java/ Python and cross-platform applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
-  resumeLink:
-    "https://suryaveer01.github.io/Resume/Suryaveer_Singh_Resume.pdf", // Set to empty to hide the button
+  resumeLink: "https://suryaveer01.github.io/Resume/Suryaveer_Singh_Resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,18 +48,13 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Full Stack Developer seeking to build innovative and impactful systems",
+  subTitle:
+    "Full Stack Developer seeking to build innovative and impactful systems",
   skills: [
-    emoji(
-      "⚡ Develop robust and scalable backends for systems"
-    ),
+    emoji("⚡ Develop robust and scalable backends for systems"),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Developing and fine-tuning Machine Learning models"
-    ),
-    emoji(
-      "⚡ Create groundbreaking AI and Robotics projects"
-    )
+    emoji("⚡ Developing and fine-tuning Machine Learning models"),
+    emoji("⚡ Create groundbreaking AI and Robotics projects")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -107,7 +101,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Angular",
       fontAwesomeClassname: "fab fa-angular"
     },
-    
+
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -119,8 +113,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
-    },
-    
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -133,7 +126,8 @@ const educationInfo = {
     {
       schoolName: "Univerity at Buffalo",
       logo: require("./assets/images/UB_Stacked_SUNY_Small.png"),
-      subHeader: "Master of Science in Engineering Science Focus in Artificial Intelligence and Robotics",
+      subHeader:
+        "Master of Science in Engineering Science Focus in Artificial Intelligence and Robotics",
       duration: "August 2022 - December 2023",
       desc: "Took courses about Machine Learning, Robotics, Deep Learning, Analysis of Algorithms ...",
       descBullets: [
@@ -202,7 +196,7 @@ const workExperiences = {
       desc: "Developed web and android applications",
       descBullets: [
         "Developed a face feature detection application in android",
-        "Developed web-pages for on-premises monolithic application",
+        "Developed web-pages for on-premises monolithic application"
       ]
     }
   ]
