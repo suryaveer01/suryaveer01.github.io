@@ -124,7 +124,7 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Univerity at Buffalo",
+      schoolName: "University at Buffalo",
       logo: require("./assets/images/UB_Stacked_SUNY_Small.png"),
       subHeader:
         "Master of Science in Engineering Science Focus in Artificial Intelligence and Robotics",
