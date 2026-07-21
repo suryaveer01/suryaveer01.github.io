@@ -23,9 +23,9 @@ const greeting = {
   username: "Suryaveer Singh",
   title: "Hi all, I'm Suryaveer",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of designing and implementing robust and scalable backend systems with Java/ Python and cross-platform applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A Robotics Engineer 🤖 building autonomous systems — designing full-stack autonomy frameworks with ROS2, robust navigation and localization stacks (Nav2, EKF, SLAM), perception pipelines and machine learning, all backed by years of scalable backend and software-engineering experience in Python, C++ and Java."
   ),
-  resumeLink: "https://suryaveer01.github.io/Resume/Suryaveer_Singh_Resume.pdf", // Set to empty to hide the button
+  resumeLink: "/Suryaveer_Singh_Resume.pdf", // Served from public/. Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -48,13 +48,21 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle:
-    "Full Stack Developer seeking to build innovative and impactful systems",
+  subTitle: "ROBOTICS ENGINEER BUILDING REAL-WORLD AUTONOMOUS SYSTEMS",
   skills: [
-    emoji("⚡ Develop robust and scalable backends for systems"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Developing and fine-tuning Machine Learning models"),
-    emoji("⚡ Create groundbreaking AI and Robotics projects")
+    emoji(
+      "⚡ Architect full-stack robot autonomy frameworks with ROS2 and composable nodes"
+    ),
+    emoji(
+      "⚡ Build navigation, localization and SLAM stacks (Nav2, EKF, sensor fusion)"
+    ),
+    emoji(
+      "⚡ Develop perception pipelines with depth cameras, visual fiducials and computer vision"
+    ),
+    emoji(
+      "⚡ Train and fine-tune Machine Learning and Reinforcement Learning models"
+    ),
+    emoji("⚡ Engineer robust, scalable backends and event-driven systems")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -62,57 +70,52 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
+      skillName: "ROS / ROS2",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "C / C++",
+      fontAwesomeClassname: "fab fa-cuttlefish"
     },
     {
       skillName: "java",
       fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Deep Learning",
+      fontAwesomeClassname: "fas fa-brain"
     },
     {
-      skillName: "Robotics",
-      fontAwesomeClassname: "fas fa-robot"
+      skillName: "Computer Vision",
+      fontAwesomeClassname: "fas fa-eye"
     },
     {
-      skillName: "Machine Learning",
-      fontAwesomeClassname: "fas fa-laptop-code"
-    },
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "Angular",
-      fontAwesomeClassname: "fab fa-angular"
-    },
-
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
+      skillName: "SQL / Postgres",
       fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "linux",
+      fontAwesomeClassname: "fab fa-linux"
     },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra"
+    },
+    {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "azure",
+      fontAwesomeClassname: "fab fa-microsoft"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -125,7 +128,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University at Buffalo",
-      logo: require("./assets/images/UB_Stacked_SUNY_Small.png"),
+      logo: require("./assets/images/UB_Primary_SUNY_Small.png"),
       subHeader:
         "Master of Science in Engineering Science Focus in Artificial Intelligence and Robotics",
       duration: "August 2022 - December 2023",
@@ -155,16 +158,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend", //Insert stack or technology you have experience in
+      Stack: "Robotics & Autonomy (ROS2 / Nav2)", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Microservices Architecture",
+      Stack: "Perception & Computer Vision",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Machine Learning / Reinforcement Learning",
       progressPercentage: "80%"
     },
     {
-      Stack: "Event-driven Architecture",
-      progressPercentage: "80%"
+      Stack: "Backend & Distributed Systems",
+      progressPercentage: "85%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -176,27 +183,32 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Unisys",
-      companylogo: require("./assets/images/Unisys_logo.png"),
-      date: "July 2016 – June 2022",
-      desc: "",
+      role: "Senior Robotics Engineer",
+      company: "Setton Farms",
+      companylogo: require("./assets/images/settonFarmsLogo.jpeg"),
+      date: "May 2024 – Present",
+      desc: "Building full-stack robot autonomy for agricultural and warehouse operations.",
       descBullets: [
-        "Developed IAM front-end with microservices architecture",
-        "Collaborated with cross-functional teams implementing API's",
-        "Awarded Tarek Award-Technology Excellence Award for a Project",
-        "Proficient in configuring and optimizing messaging queues and Event-Driven architecture"
+        "Architected a full-stack autonomy framework for industrial electric forklifts using ROS2 and a system of composable nodes to optimize CPU utilization and reduce inter-process communication latency",
+        "Engineered a high-precision navigation stack with Nav2, integrating Extended Kalman Filters (EKF) to fuse visual and wheel odometry for robust localization in dynamic warehouse environments",
+        "Developed an advanced perception-actuation pipeline using ZED depth cameras and AprilTag visual fiducials to achieve sub-centimeter accuracy during autonomous pallet engagement",
+        "Designed a hybrid computer vision workflow leveraging synthetic data generation (SDG) and real-world datasets to train robust neural networks for multi-class bin detection across varying illumination",
+        "Optimized robotic manipulation by synchronizing high-level motion planners with low-level PLC motor controllers for deterministic, smooth velocity ramps on heavy-load operations",
+        "Contributed to the development of an articulated UGV, utilizing ROS for sensor fusion and navigation",
+        "Developed a robotic manipulator with object detection to perform efficient pick-and-place operations"
       ]
     },
     {
-      role: "Software Engineer Intern",
+      role: "Software Engineer",
       company: "Unisys",
       companylogo: require("./assets/images/Unisys_logo.png"),
-      date: "Jan 2016 – June 2016",
-      desc: "Developed web and android applications",
+      date: "Jan 2016 – June 2022",
+      desc: "Built secure, large-scale enterprise systems.",
       descBullets: [
-        "Developed a face feature detection application in android",
-        "Developed web-pages for on-premises monolithic application"
+        "Engineered 2 migration utilities for 300 million records, implementing event-driven architecture with WebMQ",
+        "Developed an on-premises passenger facilitation solution at airports with identity verification using iris/face",
+        "Created a secure Remote Working Kit on Azure Cloud Services for robust authentication and streamlined software distribution, enhancing remote work safety",
+        "Awarded the Tarek Award – Technology Excellence Award for project delivery"
       ]
     }
   ]
@@ -213,34 +225,40 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle:
+    "ROBOTICS, MOTION PLANNING AND MACHINE LEARNING PROJECTS I'VE BUILT",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Motion Planning & Autonomy",
+      projectDesc:
+        "RRT path planning on image maps with OpenCV; an autonomous Evader-Mapper performing simultaneous SLAM and obstacle avoidance on an F1TENTH platform using LIDAR; PID and Pure-Pursuit controls achieving >90% path-following accuracy; and Stereo Visual Odometry from the vehicle's camera feed for reliable tracking. (Python, PyTorch, ROS, OpenCV)"
+      // footerLink can be added later once repos/demos are public
+    },
+    {
+      projectName: "Machine Learning / Reinforcement Learning",
+      projectDesc:
+        "Trained agents with Stable-Baselines3 (DQN, PPO, DDPG, SAC) across OpenAI Gym environments; used PPO to train a consistent walker in the Walker2D MuJoCo environment; and built high-accuracy CNN classifiers plus a custom-dataset Ultralytics YOLOv8 object detector for robotic applications. (Python, Stable-Baselines3, PyTorch, Deep Learning)",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View on GitHub",
+          url: "https://github.com/suryaveer01/ReinforcementLearning"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Environmental Audio Classifier",
+      projectDesc:
+        "Environmental sound classification on the UrbanSound8K and ESC-50 datasets, using Mel-spectrogram and MFCC feature extraction with a ResNet-34 model. (Python, Deep Learning)",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View on GitHub",
+          url: "https://github.com/suryaveer01/AudioClassifier"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -365,7 +383,7 @@ const contactInfo = {
   subtitle:
     "I am open for full-time opportunities. Feel free to contact me for any work or suggestions.",
   number: "+1-716 295 3000",
-  email_address: "suryavee@buffalo.edu"
+  email_address: "suryaveer01@gmail.com"
 };
 
 // Twitter Section

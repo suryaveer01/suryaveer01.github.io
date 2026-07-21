@@ -1,0 +1,48 @@
+{
+  // Dev container for the developerFolio portfolio.
+  // Matches the Node version used by the GitHub Actions deploy/prettier workflows (18.x),
+  // so "works in the container" == "works in CI" == "works on gh-pages".
+  "name": "portfolio (Node 18)",
+
+  // Prebuilt Microsoft dev container image — ships Node 18, npm, git and common tooling.
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
+
+  // Install dependencies once when the container is created.
+  "postCreateCommand": "npm install",
+
+  // Create React App dev server runs on 3000.
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "portfolio dev server",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  // Local-dev defaults. fetch.js only calls GitHub when USE_GITHUB_DATA === "true",
+  // so keeping it "false" lets `npm start` run without a token.
+  // To show live GitHub pinned repos: set this to "true" and add your token/username
+  // to a .env file (see env.example) or to REACT_APP_GITHUB_TOKEN / GITHUB_USERNAME here.
+  "remoteEnv": {
+    "USE_GITHUB_DATA": "false"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[scss]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  }
+}

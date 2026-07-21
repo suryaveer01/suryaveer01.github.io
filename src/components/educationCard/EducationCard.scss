@@ -41,7 +41,9 @@
 }
 
 .education-roundedimg {
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #fff;
+  padding: 0.6rem;
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
