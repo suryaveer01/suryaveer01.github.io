@@ -24,7 +24,13 @@ export default function Projects() {
           throw result;
         })
         .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
+          // Pinned items can come back with a null `node` (e.g. when the build
+          // token can't read the repository). Drop those so the render below
+          // never dereferences `node.id` and crashes the whole page.
+          const user = response && response.data && response.data.user;
+          const edges =
+            (user && user.pinnedItems && user.pinnedItems.edges) || [];
+          setrepoFunction(edges.filter(edge => edge && edge.node && edge.node.id));
         })
         .catch(function (error) {
           console.error(
@@ -41,7 +47,8 @@ export default function Projects() {
   }
   if (
     !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
+    openSource.display &&
+    repo.length > 0
   ) {
     return (
       <Suspense fallback={renderLoader()}>
